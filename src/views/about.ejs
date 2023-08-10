@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <title><%- title%></title>
+</head>
+<body>
+    <style>
+        .cardPerson{
+            max-width: 660px;
+            min-width: 370px;
+            padding: 2em .8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        }
+        .cardPerson h1{
+            font-size: 4em;
+        }
+    </style>
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <div class="cardPerson bg-dark text-white rounded-5">
+                <h1>Acerca de Mi</h1>
+                <p>Bienvenidos a mi perfil, aquí encontrarás un vistazo a la vida y personalidad de ESCS, un individuo apasionado y dedicado que ha dejado una marca indeleble en su camino a través de la vida.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

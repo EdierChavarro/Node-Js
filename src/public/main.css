@@ -1,0 +1,41 @@
+body{
+    width: 100vw;
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.8),rgb(0, 0, 0)), url("../img/ESCS.png") no-repeat center center;
+    overflow-x: hidden;
+    font-size: 1.3em;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+#nav{
+    box-shadow: 0 0 7px antiquewhite;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+section a{
+    color: black !important;
+    background-color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+    padding: .1em 1em;
+    border-radius: 20px;
+    transition: all .5s;
+}
+section a:hover{
+    background: black !important;
+    color: white !important;
+}
+h1, h2, h3{
+    margin: 0;
+}

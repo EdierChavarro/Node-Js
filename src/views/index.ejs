@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <title><%- title%></title>
+</head>
+<body>
+
+    <style>
+        .cardPerson{
+            width: fit-content;
+            height: fit-content;
+            padding: 4em .8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        }
+        .cardPerson h3{
+            font-size: 2em;
+        }
+    </style>
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <div class="cardPerson bg-dark rounded-5">
+                <img class="rounded-circle" height="300px" width="300px" src="https://d2r9epyceweg5n.cloudfront.net/stores/001/767/688/products/qab2f7o1-3b6344880cd05af4e816265631991484-640-0.jpg" alt="">
+                <h3 class="text-white">ESCS</h3>
+                <a class="text-black" href="/contact">Comunicarse</a>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>

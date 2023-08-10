@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <title><%- title%></title>
+</head>
+<body>
+
+    <style>
+        section{
+            height: fit-content;
+            padding: 5em 0;
+        }
+    </style>
+
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <div class="container mt-3  d-flex justify-content-center align-items-center">
+                <div class="card bg-dark text-white text-center">
+                    <div class="card-header">
+                        <h1 class="d-flex justify-content-center"> Contacto:</h1>
+                        <div class="card-body text-start">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="Escriba tu Email" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea name="mensaje" rows="10" class="form-control" placeholder="Escriba tu consulta"></textarea>
+                                </div>
+                                <button class="btn btn-primary btn-block">
+                                    Solicitar
+                                </button>
+                                <br>
+                                <p class="d-flex justify-content-center">
+                                    Si deseas obtener más información sobre nuestros servicios o discutir tus necesidades tecnológicas, no dudes en ponerte en contacto con nosotros. Estamos aquí
+                                
+                                para ayudarte en cada paso del camino. Puedes comunicarte con nosotros a través de los siguientes medios:
+                                <br>• Teléfono: 3112020262
+                                <br>• Correo electrónico: chavarroedier@gmail.com
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </section>
+    
+</body>
+</html>
